@@ -1,0 +1,86 @@
+body{
+  background-color:slategray;
+}
+/*main-container of Main.js*/
+#main-container
+{
+  position: absolute;
+  top:120px;
+  left:300px;
+  color:white;
+}
+/*Dropdown*/
+#mySelect
+{
+  width:130px;
+  font-size: 30px;
+}
+/*choose*/
+#select-btn
+{
+  height:40px;
+  background-color:red;
+  font-size: 30px;
+}
+/*the whole container of the tooltip.js*/
+.tooltip-container
+{
+  position: relative;
+  top:-40px;
+  left:400px;
+  font-weight: 900;
+}
+/*button to hover */
+.hover-button {
+  position: relative;
+  display: inline-block;
+  padding:8px;
+  background-color: red;
+  width:120px;
+  height:30px;
+  border-radius:34px;
+  border: 1px solid black;
+}
+/*tooltip*/
+#tooltip
+{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+/*choose bottom to show tooltip*/
+.hover-button .bottom
+{
+  top: 102%;
+  left: 50%;
+  margin-left: -60px;
+}
+/*choose Top to show tooltip*/
+.hover-button .top
+{
+  bottom: 105%;
+  left: 50%;
+  margin-left: -60px;
+}
+/*choose Left to show tooltip*/
+.hover-button .left
+{
+  right: 100%;
+}
+/*choose Right to show tooltip*/
+.hover-button .right
+{
+  left:100%;
+}
+/*tooltip visible when hover over the button*/
+.hover-button:hover #tooltip {
+  visibility: visible;
+}
+
+ 
